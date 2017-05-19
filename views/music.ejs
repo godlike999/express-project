@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>register</title>
+     <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+     <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+
+  <div class='container'> 
+          <div class='row'><h3>好听歌曲列表</h3></div>
+          <div class='row'>
+            <% list.forEach(function(item,idx){ %>
+                  <div class="col-sm-3 col-md-2">
+                    <div class="thumbnail" style="height:300px">
+                <a href='./music/content?id=<%- item.artist_id%>'>
+                          <img src="<%- item.pic_big%>">
+                          <div class="caption">
+                            <h3><%- item.title%></h3>
+                            <p><%- item.language%></p>
+                          </div>
+                     </a>
+                    </div>
+                  </div>
+            <%})%>
+          
+          </div>
+            <div class='row'>
+                    <a href="./music?pageNo=1">首页</a>
+                    <a href="./music?pageNo=<%= pageNo > 1 ? parseInt(pageNo)-1: 1 %>">上一页</a>
+                    <a href="./music?pageNo=<%= pageNo < totalPages ? parseInt(pageNo)+1: totalPages %>">下一页</a>
+                    <a href="./music?pageNo=<%=totalPages%>">尾页</a>
+                    <%= pageNo%> / <%=totalPages%> 共 <%=count%>记录
+           </div>
+
+
+
+
+
+</div>
+
+     <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html> 

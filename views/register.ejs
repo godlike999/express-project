@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>login</title>
+
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel='stylesheet' href='/stylesheets/login.css' />
+  </head>
+  <body>
+    <div class="login">
+        <div>
+           
+            <h3>登录看电影</h3>
+        </div>
+        <div class="navbar-left">
+            <form class="navbar-form form-horizontal" role="search" action="./users/register" method="post">
+              <div class="form-group">
+                <label>
+                    邮箱<input type="text" class="form-control" placeholder="邮箱" name="email"/>
+                </label>
+                <br />
+                <lable>
+                    密码<input type="password" class="form-control" name="password" />
+                </lable>
+                <br/>
+                <label>
+                    <input type="checkbox"/>
+                    <span>下次自动登录</span>
+                    <span>|</span>
+                    <span><a href="#">忘记密码了</a></span>
+                </label>
+                <br/>
+                <lable>
+                    <input type="submit" class="btn btn-default" value="注册">
+                </lable>
+              </div>
+
+              
+            </form>
+            <div class="item item-3rd navbar-left">
+                <label>
+                第三方登录：
+                </label>
+                <a target="_top" href="https://www.douban.com/accounts/connect/wechat/?from=movie&amp;redir=https%3A//movie.douban.com/" class="item-wechat"><img src="https://img3.doubanio.com/f/accounts/1b6cc3ca91f78cf47f41eafa91fbcd4918ae239c/pics/connect_wechat.png" title="微信"></a>
+                <a target="_top" href="https://www.douban.com/accounts/connect/sina_weibo/?from=movie&amp;redir=https%3A//movie.douban.com/&amp;fallback=" class="item-weibo"><img src="https://img3.doubanio.com/f/accounts/e2f1d8c0ede93408b46cbbab4e613fb29ba94e35/pics/connect_sina_weibo.png" title="新浪微博"></a>
+                  <a target="_top" href="https://www.douban.com/accounts/connect/qq/?from=movie&amp;redir=https%3A//movie.douban.com/" class="item-qq"><img src="https://img3.doubanio.com/f/accounts/be10f8fb4a3fd87f2f0d2fa18ed83b7d6b880697/pics/connect_qq.png" title="QQ"></a>
+            </div>
+        </div>
+        <div class="aside navbar-right">
+            <div><span>已有豆瓣账号？</span><a href="#">立即登录</a></div>
+            <div><a href="#">点击下载豆瓣移动应用</a></div>
+
+        </div>
+        
+        
+    </div>
+    <div class="footer">
+        <span id="icp" class="fleft gray-link">
+            © 2005－2017 douban.com, all rights reserved
+        </span>
+
+        <span class="fright">
+            <a href="https://www.douban.com/about">关于豆瓣</a>
+            · <a href="https://www.douban.com/jobs">在豆瓣工作</a>
+            · <a href="https://www.douban.com/about?topic=contactus">联系我们</a>
+            · <a href="https://www.douban.com/about?policy=disclaimer">免责声明</a>
+            
+            · <a href="https://www.douban.com/help/">帮助中心</a>
+            · <a href="https://developers.douban.com/" target="_blank">开发者</a>
+            · <a href="https://www.douban.com/mobile/">移动应用</a>
+            · <a href="https://www.douban.com/partner/">豆瓣广告</a>
+        </span>
+
+    </div>
+  </body>
+</html>
